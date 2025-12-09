@@ -1,0 +1,20 @@
+fastapi
+uvicorn
+python-multipart
+# The "Golden Stack" versions we verified
+langchain==0.3.0
+langchain-community==0.3.0
+langchain-core==0.3.0
+langchain-huggingface==0.1.0
+langchain-groq==0.2.0
+langchain-text-splitters==0.3.0
+faiss-cpu
+sentence-transformers
+tf-keras
+pydantic
+# PDF & OCR Tools
+pdfminer.six
+pytesseract
+pdf2image
+pillow
+requests

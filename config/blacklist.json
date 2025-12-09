@@ -1,0 +1,11 @@
+{
+  "banned_vendors": [
+    "DarkWeb Solutions Ltd",
+    "Vijay Mallya Liquors", 
+    "Shell Company Inc",
+    "Fraud Corp"
+  ],
+  "risk_thresholds": {
+    "require_manager_approval_above": 10000
+  }
+}

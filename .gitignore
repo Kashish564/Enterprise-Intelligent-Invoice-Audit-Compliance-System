@@ -1,0 +1,16 @@
+# Ignore Python Cache
+__pycache__/
+*.pyc
+
+# Ignore Environment
+venv/
+env/
+.env
+
+# Ignore Large Data Files
+data/vector_store/
+data/knowledge_base/
+data/fraud_test/
+
+# Ignore OS files
+.DS_Store

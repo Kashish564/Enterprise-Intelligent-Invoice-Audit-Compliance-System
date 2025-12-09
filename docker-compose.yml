@@ -1,0 +1,26 @@
+services:
+  # Service 1: The API
+  backend:
+    build: ./backend
+    container_name: invoice_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount data so the container can read your invoices
+      - ./data:/app/data
+      # Mount config so it can read blacklist.json
+      - ./config:/app/config
+    environment:
+      - PYTHONPATH=/app
+
+  # Service 2: The UI
+  frontend:
+    build: ./frontend
+    container_name: invoice_frontend
+    ports:
+      - "8501:8501"
+    environment:
+      # Tell Streamlit to talk to the 'backend' container name
+      - API_URL=http://backend:8000/analyze
+    depends_on:
+      - backend
